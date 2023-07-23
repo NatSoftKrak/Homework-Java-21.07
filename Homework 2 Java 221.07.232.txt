@@ -33,4 +33,4 @@ Process finished with exit code 0
 
 
 
-
+AND 2 EXERCICE : https://github.com/NatSoftKrak/Homework-Jav21.07/blob/main/Homework%20Java%2021.07.23.txt
