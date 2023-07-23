@@ -1,0 +1,33 @@
+public class Main {
+    public static void main(String[] args) {
+
+        byte newByte = 3;
+        int newInt = 756;
+        double newDouble = 123.45;
+        float newFloat = 3.14f;
+
+        byte narrowByte = (byte) newInt;
+        int  narrowInt = (int) newByte;
+        float narrowFloat = (float) newDouble;
+        double narrowDouble = (double) newFloat;
+
+        System.out.println("Narrowed byte (from int): " + narrowByte);
+        System.out.println("Narrowed float (from double): " + narrowFloat);
+
+        int extInt = newByte;
+        double extDouble = newFloat;
+
+        System.out.println("Extended int (from byte): " + extInt);
+        System.out.println("Extended double (from float): " + extDouble);
+
+}
+
+
+"C:\Program Files\Java\jdk-20\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58620:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Natalia\Homework_Java_20.07.23\out\production\Homework_Java_20.07.23 Main
+Narrowed byte (from int): -12
+Narrowed float (from double): 123.45
+Extended int (from byte): 3
+Extended double (from float): 3.140000104904175
+
+Process finished with exit code 0
+
